@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>meu cartão digital</title>
+    <link rel="icon" type="image/png" href="github.png">
      <style>
         /* Estilos para o cartão digital */
 
@@ -15,7 +16,8 @@
     }
 
     body {
-        background-color: #f4f4f4;
+        background: linear-gradient(to bottom, #0080ffa9, #e4e4e4);
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -116,6 +118,26 @@
    
 }
 
+.gigi {
+            position: fixed;       /* Deixa o ícone fixo na tela mesmo ao rolar a página */
+            top: 15px;             /* Distância do topo */
+            left: 15px;            /* Distância da esquerda */
+            width: 45px;           /* Tamanho pequeno padrão de ícone/avatar */
+            height: 45px;          /* Mantém a proporção igual para ser um círculo perfeito */
+            border-radius: 30%;    /* Corta a imagem em formato redondo */
+            overflow: hidden;      /* Garante que nada da imagem passe do círculo */
+            border: 2px solid #52a3e6; /* Borda azul fina igual à da sua foto */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Sombra leve para destacar */
+            z-index: 1000;         /* Garante que ele fique por cima de outros elementos */
+        }
+
+        /* Garante que a imagem preencha o círculo sem distorcer */
+        .ovana img {
+            width: 300%;
+            height: 300%;
+            object-fit: cover;     
+        }
+
     </style>
 </head>
 <body>
@@ -130,6 +152,12 @@
 
         <div class="avatar-container">
             <img class="avatar-img" src="WhatsApp Image 2026-06-26 at 20.48.49.jpeg" alt="Sua Foto de Perfil">
+        </div>
+
+        <div class="gigi">
+
+            <img src="Captura de tela 2026-06-25 225113.png" alt="Minha Foto de Perfil" class="ovana">
+
         </div>
 
         <div class="descricoes">
